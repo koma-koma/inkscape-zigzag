@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>ZigZag</name>
+  <id>org.inkscape.keitamiyashita.zigzag</id>
+  <!-- <param name="method" type="enum" _gui-text="Division method:">
+        <_item value="bymax">By max. segment length</_item>
+        <_item value="bynum">By number of segments</_item>
+  </param> -->
+  <param name="segments" type="int" min="1" max="1000" _gui-text="Number of segments:">2</param>
+  <effect>
+    <object-type>path</object-type>
+    <effects-menu>
+      <submenu name="Modify Path"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">zigzag.py</command>
+  </script>
+</inkscape-extension>
