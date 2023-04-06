@@ -7,6 +7,19 @@
         <_item value="bynum">By number of segments</_item>
   </param> -->
   <param name="segments" type="int" min="1" max="1000" _gui-text="Number of segments:">2</param>
+  <param name="size" type="float" min="0" max="100" _gui-text="Size:">2</param>
+  <param name="unit" gui-text="Unit of size:" type="optiongroup" appearance="combo">
+        <option translatable="no" value="px">px</option>
+        <option translatable="no" value="pt">pt</option>
+        <option translatable="no" value="in">in</option>
+        <option translatable="no" value="cm">cm</option>
+        <option translatable="no" value="mm">mm</option>
+    </param>
+  <param name="type" gui-text="Type of line:" type="optiongroup" appearance="combo">
+    <option value="smooth">smooth</option>
+    <option value="linear">linear</option>
+  </param>
+
   <effect>
     <object-type>path</object-type>
     <effects-menu>
