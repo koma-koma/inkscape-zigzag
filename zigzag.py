@@ -56,7 +56,6 @@ class ZigZag(inkex.EffectExtension):
 
             for sub in node.path.to_superpath():
                 new.append([sub[0][:]])
-                inkex.utils.debug(sub[0])
                 i = 1
                 while i <= len(sub) - 1:
                     splits = self.options.segments + 1
